@@ -2,6 +2,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: -40px;
     background: black;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
 }
@@ -48,8 +49,56 @@ nav h2{
 }
 button {
     background: #22C55E;
-    padding: 10px;
+    padding: 05px;
+    padding-left: 20px;
+    padding-right: 20px;
     border-radius: 10px;
     font-size: 15px;
     margin-right: 50px;
+    border-radius: 50px;
+    border-color: #ffffff;
+    font-size: 20px;
+    color: #ffffff;
+}
+button:hover {
+    background-color: #24914e;
+    padding: 07px;
+    padding-left: 22px;
+    padding-right: 22px;
+}
+#mobile {
+    display: none;
+}
+#mobile i {
+    color: #ffffff;
+    padding-right: 20px;
+}
+@media screen and (max-width:769px){
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 90px;
+        right: -300px;
+        width: 300px;
+        height: 100vh;
+        background: black;
+        padding: 40px 0 0 10px;
+        transition: 0.3s ease-in-out;
+    }
+    #navbar.active {
+        right: 0px;
+    }
+    #navbar li{
+        margin-bottom: 25px;
+    }
+    #mobile {
+        display: block;
+    }
+    #mobile i{
+        font-size: 24px;
+        cursor: pointer;
+    }
 }
