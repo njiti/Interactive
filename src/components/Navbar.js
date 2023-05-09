@@ -15,11 +15,11 @@ class Navbar extends Component {
                 <div>
                     <ul id="navbar" className={this.state.clicked ? "#navbar active" : "#navbar"}>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="index.html">About Me</a></li>
-                        <li><a href="index.html">Projects</a></li>
-                        <li><a href="index.html">contact me</a></li>
-                        <li><a href="index.html">More on me</a></li>
-                        <li><a href="index.html">Code like me</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">contact me</a></li>
+                        <li><a href="more.html">More on me</a></li>
+                        <li><a href="code.html">Code like me</a></li>
                     </ul>
                 </div>
                 <button>LogIn</button>
